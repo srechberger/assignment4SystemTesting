@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="0" name="at.jku.swtesting.LisssTest" time="11.484" errors="0" skipped="0">
+<testsuite tests="1" failures="1" name="at.jku.swtesting.LisssTest" time="12.33" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="11.0.6+8-LTS"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-11.0.6\bin"/>
-    <property name="maven.multiModuleProjectDirectory" value="C:\Users\stefa\eclipse-workspace_202003\Assignment4SystemTesting"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\stefa\git\SystemTestingAssignment4"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -15,7 +15,7 @@
     <property name="user.country" value="AT"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="C:\Users\stefa\eclipse-workspace_202003\Assignment4SystemTesting"/>
+    <property name="user.dir" value="C:\Users\stefa\git\SystemTestingAssignment4"/>
     <property name="java.vm.compressedOopsMode" value="32-bit"/>
     <property name="java.runtime.version" value="11.0.6+8-LTS"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
@@ -26,7 +26,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="C:\Users\stefa\eclipse-workspace_202003\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf1401607187876661624.tmp"/>
+    <property name="classworlds.conf" value="C:\Users\stefa\eclipse-workspace_202003\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf3703054513701605535.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="java.library.path" value="C:\Program Files\Java\jdk-11.0.6\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_151/bin/server;C:/Program Files/Java/jre1.8.0_151/bin;C:/Program Files/Java/jre1.8.0_151/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\System32;C:\Windows;C:\Windows\System32\wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Java\jdk1.8.0_91\bin\;C:\Program Files\Git\cmd;C:\Program Files (x86)\Yarn\bin;C:\Program Files (x86)\BaseX\bin;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\GnuPG\bin;C:\Program Files\TortoiseGit\bin;C:\Program Files\PuTTY\;C:\Program Files\nodejs\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk-14\bin\;C:\Program Files\Java\jdk-9.0.4\bin\;C:\Program Files\Java\jdk-11.0.6\bin\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\stefa\AppData\Local\Microsoft\WindowsApps;C:\Users\stefa\AppData\Local\Yarn\bin;C:\Program Files\Java\jdk1.8.0_101\bin;C:\Users\stefa\AppData\Local\GitHubDesktop\bin;C:\Users\stefa\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\stefa\AppData\Local\Microsoft\WindowsApps;C:\Users\stefa\AppData\Roaming\npm;C:\hadoop\bin;C:\Python27;C:\Python27\Scripts;C:\Program Files\Java\jdk-14\bin\;C:\Program Files\Java\jdk-9.0.4\bin\;C:\Program Files\Java\jdk-11.0.6\bin\;;C:\Users\stefa\OneDrive - Johannes Kepler Universität Linz\Desktop;;."/>
     <property name="jdk.debug" value="release"/>
@@ -51,7 +51,7 @@
     <property name="java.vm.info" value="mixed mode"/>
     <property name="java.version" value="11.0.6"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="maven.home" value="C:\Users\stefa\eclipse-workspace_202003\Assignment4SystemTesting\EMBEDDED"/>
+    <property name="maven.home" value="C:\Users\stefa\git\SystemTestingAssignment4\EMBEDDED"/>
     <property name="file.separator" value="\"/>
     <property name="java.version.date" value="2020-01-14"/>
     <property name="java.vendor.url.bug" value="http://bugreport.java.com/bugreport/"/>
@@ -61,5 +61,38 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="at.jku.swtesting.LisssTest" name="at.jku.swtesting.LisssTest.testSearch" time="11.484"/>
+  <testcase classname="at.jku.swtesting.LisssTest" name="at.jku.swtesting.LisssTest.testSearch" time="12.33">
+    <failure message="expected: &lt;2,730 Ergebnisse&gt; but was: &lt;2.730 Ergebnisse&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;2,730 Ergebnisse&gt; but was: &lt;2.730 Ergebnisse&gt;
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1124)
+	at at.jku.swtesting.LisssTest.testSearch(LisssTest.java:57)
+</failure>
+    <system-out>19:21:54.424 [main] DEBUG io.github.bonigarcia.wdm.Preferences - Preference chrome=81 (valid until 2020-05-06 17:39:53)
+19:21:54.433 [main] DEBUG io.github.bonigarcia.wdm.Preferences - Preference chrome81=81.0.4044.69 (valid until 2020-05-06 17:39:53)
+19:21:54.434 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 81.0.4044.69 (since Google Chrome 81 is installed in your machine)
+19:21:54.452 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager - Driver chromedriver 81.0.4044.69 found in cache
+19:21:54.453 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\stefa\.m2\repository\webdriver\chromedriver\win32\81.0.4044.69\chromedriver.exe
+</system-out>
+    <system-err>Starting ChromeDriver 81.0.4044.69 (6813546031a4bc83f717a2ef7cd4ac6ec1199132-refs/branch-heads/4044@{#776}) on port 25404
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+Mai 05, 2020 7:21:58 NACHM. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+[1588699318.950][SEVERE]: Timed out receiving message from renderer: 0.100
+[1588699319.098][SEVERE]: Timed out receiving message from renderer: 0.100
+[1588699319.236][SEVERE]: Timed out receiving message from renderer: 0.100
+[1588699319.459][SEVERE]: Timed out receiving message from renderer: 0.100
+[1588699319.567][SEVERE]: Timed out receiving message from renderer: 0.100
+[1588699319.718][SEVERE]: Timed out receiving message from renderer: 0.100
+[1588699319.824][SEVERE]: Timed out receiving message from renderer: 0.100
+[1588699319.937][SEVERE]: Timed out receiving message from renderer: 0.100
+[1588699320.046][SEVERE]: Timed out receiving message from renderer: 0.100
+[1588699320.161][SEVERE]: Timed out receiving message from renderer: 0.100
+[1588699320.473][SEVERE]: Timed out receiving message from renderer: 0.100
+[1588699320.578][SEVERE]: Timed out receiving message from renderer: 0.100
+</system-err>
+  </testcase>
 </testsuite>

@@ -13,10 +13,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.Keys;
-
+import org.openqa.selenium.support.PageFactory;
 import java.util.concurrent.TimeUnit;
 
-public class LisssTest {
+public class LisssPageObjectTest {
 
 	private static WebDriver driver;
 
@@ -33,23 +33,23 @@ public class LisssTest {
 		driver.close();
 		driver.quit();
 	}
-
+  
 	@Test
 	public void testSearch() {
-
+		String searchString = "software testing";
+		
 		// url webservice
 		driver.get("https://lisss.jku.at/");
 
-		// searchbar element
-		WebElement searchBar = driver.findElement(By.id("searchBar"));
-	    searchBar.sendKeys("software testing");
-	    searchBar.sendKeys(Keys.ENTER);		 
+	    // create a new instance of the search page class and initialise WebElement (searchBar)
+	    SearchPage sPage = PageFactory.initElements(driver, SearchPage.class);
+		sPage.searchFor(searchString);
 		
-	    // results element
-	    WebElement resultsCount = driver.findElement(By.cssSelector(".results-count"));
+		// create a new instance of the search page class and initialise WebElements (resultsCount, title)
+	    ResultsPage rPage = PageFactory.initElements(driver, ResultsPage.class);
 	    
 	    // tests
-	    assertEquals("2.730 Ergebnisse", resultsCount.getText().replace(",", "."));
+	    assertEquals("2.730 Ergebnisse", rPage.getNumberOfResults());
 	    assertEquals("JKU | LISSS - software testing", driver.getTitle());
 		
 	  }

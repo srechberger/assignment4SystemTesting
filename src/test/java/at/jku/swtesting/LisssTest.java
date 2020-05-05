@@ -54,7 +54,7 @@ public class LisssTest {
 	    WebElement resultsCount = driver.findElement(By.cssSelector(".results-count"));
 	    
 	    // tests
-	    assertEquals("2,730 Ergebnisse", resultsCount.getText());
+	    assertEquals("2.730 Ergebnisse", resultsCount.getText());
 	    assertEquals("JKU | LISSS - software testing", driver.getTitle());
 		
 	  }

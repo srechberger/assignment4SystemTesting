@@ -47,9 +47,11 @@ public class LisssTest {
 		
 	    // results element
 	    WebElement resultsCount = driver.findElement(By.cssSelector(".results-count"));
+	    int numberOfResults = Integer.parseInt(resultsCount.getText().split("\\ ")[0].replace(",", "").replace(".", ""));
+	    
 	    
 	    // tests
-	    assertEquals("2.730 Ergebnisse", resultsCount.getText().replace(",", "."));
+	    assertEquals(2730, numberOfResults);
 	    assertEquals("JKU | LISSS - software testing", driver.getTitle());
 		
 	  }

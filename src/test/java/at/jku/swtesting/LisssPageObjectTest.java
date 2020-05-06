@@ -49,7 +49,7 @@ public class LisssPageObjectTest {
 	    ResultsPage rPage = PageFactory.initElements(driver, ResultsPage.class);
 	    
 	    // tests
-	    assertEquals("2.730 Ergebnisse", rPage.getNumberOfResults());
+	    assertEquals(2730, rPage.getNumberOfResults());
 	    assertEquals("JKU | LISSS - software testing", driver.getTitle());
 		
 	  }

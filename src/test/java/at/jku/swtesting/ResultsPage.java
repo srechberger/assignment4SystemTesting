@@ -12,7 +12,7 @@ public class ResultsPage {
 	@FindBy(css = ".results-count")
 	private WebElement resultsCount;
 	
-    public String getNumberOfResults() {
-    	return resultsCount.getText().replace(",", ".");
+    public int getNumberOfResults() {
+    	return Integer.parseInt(resultsCount.getText().split("\\ ")[0].replace(",", "").replace(".", ""));
     }
 } 

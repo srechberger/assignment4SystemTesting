@@ -8,7 +8,7 @@ import org.junit.jupiter.api.AfterAll;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 import org.openqa.selenium.chrome.ChromeDriver;
-
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -39,7 +39,9 @@ public class LisssTest {
 
 		// url webservice
 		driver.get("https://lisss.jku.at/");
-
+		// set windowsize to find results-element
+		driver.manage().window().setSize(new Dimension(1400, 800));
+		
 		// searchbar element
 		WebElement searchBar = driver.findElement(By.id("searchBar"));
 	    searchBar.sendKeys("software testing");

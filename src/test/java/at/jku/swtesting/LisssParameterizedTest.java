@@ -11,7 +11,7 @@ import org.junit.jupiter.params.provider.CsvSource;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.chrome.ChromeDriver;
-
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -43,7 +43,9 @@ public class LisssParameterizedTest {
   	    	
 		// url webservice
 		driver.get("https://lisss.jku.at/");
-
+		// set windowsize to find results-element
+		driver.manage().window().setSize(new Dimension(1400, 800));
+		
 	    // create a new instance of the search page class and initialise WebElement (searchBar)
 	    SearchPage sPage = PageFactory.initElements(driver, SearchPage.class);
 		sPage.searchFor(searchString);

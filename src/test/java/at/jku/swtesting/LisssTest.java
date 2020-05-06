@@ -46,7 +46,7 @@ public class LisssTest {
 	    searchBar.sendKeys(Keys.ENTER);		 
 		
 	    // results element
-	    WebElement resultsCount = driver.findElement(By.cssSelector(".results-count"));
+	    WebElement resultsCount = driver.findElement(By.cssSelector(".search-toolbar-title > .results-count"));
 	    int numberOfResults = Integer.parseInt(resultsCount.getText().split("\\ ")[0].replace(",", "").replace(".", ""));
 	    
 	    

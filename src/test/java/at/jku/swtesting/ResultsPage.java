@@ -9,7 +9,7 @@ import org.openqa.selenium.Keys;
 
 public class ResultsPage {
     // The element is looked up using the css attribute,	
-	@FindBy(css = ".results-count")
+	@FindBy(css = ".search-toolbar-title > .results-count")
 	private WebElement resultsCount;
 	
     public int getNumberOfResults() {
